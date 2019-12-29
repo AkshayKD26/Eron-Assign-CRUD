@@ -40,7 +40,7 @@ class UserModal extends Component {
       city: this.state.city,
       phone: this.state.phone
     };
-    if(this.state.name !==""&&this.state.dob!==""&&this.state.city !==""&&this.state.phone !==""){
+    if(this.state.mobileNoVarified === true&&this.state.name !==""&&this.state.dob!==""&&this.state.city !==""&&this.state.phone !==""){
         if(this.props.isUpdate){
             this.props.updateUser(data, this.props.index);
         }else{
@@ -119,6 +119,7 @@ class UserModal extends Component {
                   <div className="col-sm-8">
                     <input
                       className="form-control"
+                      type="number"
                       value={this.state.phone}
                       onChange={e => 
                         this.validateMobileNo(e)
