@@ -1,12 +1,29 @@
 .App {
   text-align: center;
 }
-
+thead{
+  background: #68b1ff;
+}
+.modal-content{
+  background: #68b1ff;
+  color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+.imageIcon{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.errorMessage{
+  color: #bd2130;
+  font-style: italic;
+  font-size: 14px;
+  text-align: left !important;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
